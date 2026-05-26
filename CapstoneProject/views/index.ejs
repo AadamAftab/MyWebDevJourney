@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+
+<section class="hero">
+    <h1>Aadam Essays</h1>
+
+    <p class="intro">
+        Thoughts on engineering, learning,
+        ambition, systems, and difficult problems.
+    </p>
+</section>
+
+<section class="posts">
+
+    <% if (posts.length > 0) { %>
+
+        <% for (let i = 0; i < posts.length; i++) { %>
+
+            <article class="post-preview">
+
+                <a href="/posts/<%=posts[i].id%>"><h2><%= posts[i].title %></h2></a>
+
+                <p class="date">
+                    <%= posts[i].date %>
+                </p>
+
+                <p class="excerpt">
+                    <%= posts[i].excerpt %>
+                </p>
+
+            </article>
+
+        <% } %>
+
+    <% } else { %>
+
+        <p>No posts available yet.</p>
+
+    <% } %>
+
+</section>
+
+<%- include("partials/footer.ejs") %>

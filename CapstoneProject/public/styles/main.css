@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #f7f3eb;
+  color: #2d2a26;
+
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+
+/* Main Layout */
+main {
+  max-width: 720px;
+
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: normal;
+
+  margin-bottom: 0.8rem;
+  letter-spacing: -1px;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: #6b6257;
+
+  max-width: 580px;
+}
+
+/* Posts Section */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Individual Post */
+.post-preview {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #d8d1c7;
+}
+
+.post-preview h2 {
+  font-size: 1.7rem;
+  font-weight: normal;
+
+  margin-bottom: 0.35rem;
+
+  color: #2d2a26;
+
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.post-preview h2:hover {
+  color: #3f5c7a;
+}
+
+/* Date */
+.date {
+  font-size: 0.92rem;
+  color: #8a8175;
+
+  margin-bottom: 0.7rem;
+}
+
+/* Excerpt */
+.excerpt {
+  font-size: 1rem;
+  color: #3b3631;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+
+  padding: 1.5rem 1rem;
+
+  font-size: 0.85rem;
+  color: #8a8175;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .post-preview h2 {
+    font-size: 1.45rem;
+  }
+
+  .intro,
+  .excerpt {
+    font-size: 0.98rem;
+  }
+}
